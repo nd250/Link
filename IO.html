@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="rw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imiryango mpuzamahanga</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .nav {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav h1 {
+            color: #4facfe;
+        }
+
+        .categories,
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .card a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #007bff;
+            font-size: 18px;
+            display: block;
+        }
+
+        .card img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+            margin: 50px 0 20px;
+        }
+
+        h3 {
+            grid-column: 1 / -1;
+            margin-top: 40px;
+            color: white;
+            font-size: 20px;
+        }
+
+        footer {
+            margin-top: 30px;
+            background: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <h1>ND MY LINK</h1>
+                    <div class="menu">
+                <a href="Index.html">
+    <img src="https://img.icons8.com/ios-filled/50/000000/home.png" alt="Home" width="30" height="30">Ahabanza
+</a>
+      <a href="Services.html">
+    <img src="https://img.icons8.com/color/48/services--v1.png" alt="Services" width="20" style="vertical-align:middle;">
+    Serivisi
+</a>
+                <div class="menu">
+      <a href="help.html">
+    <img src="https://img.icons8.com/color/48/help--v1.png" alt="Help" width="20" style="vertical-align:middle;">
+    Ubufasha
+</a>
+<img src="https://img.icons8.com/ios-filled/50/000000/menu--v1.png" alt="Menu" width="30" height="30">
+      <a href="Menu.html">Ibirimo</a>
+                </div></div></div>
+        </div>
+
+        <div class="categories">
+            <div class="card"><a href="#international-organization">International Organizations</a></div>
+        </div>
+
+        <div class="links">
+            <h2 id="international-organization">International Organizations</h2>
+
+            <h3>International Organizations Links:</h3>
+            <div class="card"><a href="https://www.un.org/">United Nations (UN)</a></div>
+            <div class="card"><a href="https://www.who.int/">World Health Organization (WHO)</a></div>
+            <div class="card"><a href="https://www.imf.org/">International Monetary Fund (IMF)</a></div>
+            <div class="card"><a href="https://www.worldbank.org/">World Bank</a></div>
+            <div class="card"><a href="https://www.wto.org/">World Trade Organization (WTO)</a></div>
+            <div class="card"><a href="https://www.nato.int/">North Atlantic Treaty Organization (NATO)</a></div>
+            <div class="card"><a href="https://www.oecd.org/">Organisation for Economic Co-operation and Development (OECD)</a></div>
+            <div class="card"><a href="https://www.ocha.org/">Office for the Coordination of Humanitarian Affairs (OCHA)</a></div>
+            <div class="card"><a href="https://www.redcross.org/">International Federation of Red Cross and Red Crescent Societies (IFRC)</a></div>
+            <div class="card"><a href="https://www.interpol.int/">Interpol</a></div>
+            <div class="card"><a href="https://www.unesco.org/">United Nations Educational, Scientific and Cultural Organization (UNESCO)</a></div>
+            <div class="card"><a href="https://www.cdc.gov/">Centers for Disease Control and Prevention (CDC)</a></div>
+
+            <!-- Added 10 more international organizations -->
+            <div class="card"><a href="https://www.wfp.org/">World Food Programme (WFP)</a></div>
+            <div class="card"><a href="https://www.afdb.org/">African Development Bank (AfDB)</a></div>
+            <div class="card"><a href="https://www.icrc.org/">International Committee of the Red Cross (ICRC)</a></div>
+            <div class="card"><a href="https://www.amnesty.org/">Amnesty International</a></div>
+            <div class="card"><a href="https://www.greenpeace.org/">Greenpeace</a></div>
+            <div class="card"><a href="https://www.cia.gov/">Central Intelligence Agency (CIA)</a></div>
+            <div class="card"><a href="https://www.who.int/">World Health Organization (WHO)</a></div>
+            <div class="card"><a href="https://www.worldwildlife.org/">World Wildlife Fund (WWF)</a></div>
+            <div class="card"><a href="https://www.unicef.org/">United Nations Children’s Fund (UNICEF)</a></div>
+            <div class="card"><a href="https://www.euractiv.com/">European Union (EU)</a></div>
+
+        </div>
+    </div>
+  <footer>
+    &copy; 2025 ND My Link. All rights reserved.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="rw">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - LINK</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    .nav {
+      background: #4facfe;
+      padding: 20px;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    }
+    .nav h1 {
+      color: white;
+    }
+    .search-bar-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    .search-bar {
+      width: 100%;
+      max-width: 600px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 25px;
+      border: 1px solid #ccc;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+    .search-bar:focus {
+      border-color: #ff7e5f;
+    }
+    .search-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-left: 10px;
+      background-color: #ff7e5f;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .search-button:hover {
+      background-color: #feb47b;
+    }
+    .categories {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      text-align: center;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    }
+    .card a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #007bff;
+      font-size: 18px;
+      display: block;
+    }
+    footer {
+      margin-top: 30px;
+      background: white;
+      text-align: center;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Navigation bar -->
+    <div class="nav">
+      <h1>ND MY LINK</h1>
+                    <div class="menu">
+                <a href="Index.html">
+    <img src="https://img.icons8.com/ios-filled/50/000000/home.png" alt="Home" width="30" height="30">Ahabanza
+</a>
+      <a href="Services.html">
+    <img src="https://img.icons8.com/color/48/services--v1.png" alt="Services" width="20" style="vertical-align:middle;">
+    Serivisi
+</a>
+                <div class="menu">
+      <a href="help.html">
+    <img src="https://img.icons8.com/color/48/help--v1.png" alt="Help" width="20" style="vertical-align:middle;">
+    Ubufasha
+</a>
+<img src="https://img.icons8.com/ios-filled/50/000000/menu--v1.png" alt="Menu" width="30" height="30">
+      <a href="Menu.html">Ibirimo</a>
+                </div></div></div>
+    </div>
+    
+    <!-- Search Bar -->
+    <div class="search-bar-container">
+      <input type="text" class="search-bar" placeholder="Shakisha ibiriho..." id="searchInput">
+      <button class="search-button" onclick="searchFunction()">Shakisha</button>
+    </div>
+
+    <!-- Categories -->
+    <div class="categories">
+      <div class="card"><a href="#news">Amakuru</a></div>
+      <div class="card"><a href="#education">Uburezi</a></div>
+      <div class="card"><a href="#entertainment">Imyidagaduro</a></div>
+      <div class="card"><a href="#technology">Ikoranabuhanga</a></div>
+      <div class="card"><a href="#sports">Imikino</a></div>
+      <div class="card"><a href="#tv">Televiziyo</a></div>
+      <div class="card"><a href="#organizations">Imiryango Mpuzamahanga</a></div>
+      <div class="card"><a href="#stars">Ibyamamare</a></div>
+      <div class="card"><a href="#AI">Ubwenge Bukoranye n'Ikoranabuhanga (AI)</a></div>
+      <div class="card"><a href="#jobs">Imirimo n'Amahugurwa</a></div>
+      <div class="card"><a href="#Travel & Tourism">Ingendo n'ubukerarugendo</a></div>
+      <div class="card"><a href="Health & Wellness">Ubuzima n'imirire</a>"</div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 ND MY LINK. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    function searchFunction() {
+      const query = document.getElementById("searchInput").value;
+      if (query) {
+        alert("Washakishije: " + query);
+        // Hano ushobora kongeramo uburyo bwo gukora ubushakashatsi ku rubuga rwawe
+      } else {
+        alert("Please enter a search term.");
+      }
+    }
+  </script>
+</body>
+</html>
